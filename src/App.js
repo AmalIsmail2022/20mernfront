@@ -13,7 +13,7 @@ function App() {
 
 
  const getAllStudents = async () => {
-    const res = await axios.get("http://localhost:9999/api/v1/students")
+    const res = await axios.get("https://20mern.vercel.app/api/v1/students")
     setstudents(res.data.data)
   }
 useEffect(() => {
@@ -22,7 +22,7 @@ useEffect(() => {
   
   const addNewStudent = async () => {
     if (name, age, email) {
-    const res = await axios.post("http://localhost:9999/api/v1/students", {
+    const res = await axios.post("https://20mern.vercel.app/api/v1/students", {
     name:name,
     age:age,
     email:email
